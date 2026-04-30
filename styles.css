@@ -200,3 +200,7 @@ footer {
   padding: 20px;
   background: #020c1b;
 }
+
+.card::before {
+  pointer-events: none;
+}
