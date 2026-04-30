@@ -204,3 +204,7 @@ footer {
 .card::before {
   pointer-events: none;
 }
+
+ul {
+  list-style-position: inside;
+}
