@@ -194,6 +194,15 @@ body {
   margin: 10px 0;
 }
 
+/* Links */
+#contact a:link {
+  color: rgb(2, 168, 219);
+  text-decoration: none;
+}
+
+#contact a:hover {
+  color: #64ffda;
+}
 /* FOOTER */
 footer {
   text-align: center;
