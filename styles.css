@@ -3,7 +3,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Segoe UI', sans-serif;
+  font-family: "Segoe UI", sans-serif;
 }
 
 body {
@@ -70,7 +70,9 @@ body {
 .glow {
   font-size: 3rem;
   color: #fff;
-  text-shadow: 0 0 10px #64ffda, 0 0 20px #64ffda;
+  text-shadow:
+    0 0 10px #64ffda,
+    0 0 20px #64ffda;
 }
 
 /* typing effect */
@@ -80,15 +82,21 @@ body {
   width: 0;
   overflow: hidden;
   white-space: nowrap;
-  animation: typing 3s steps(20) forwards, blink 0.6s infinite;
+  animation:
+    typing 3s steps(20) forwards,
+    blink 0.6s infinite;
 }
 
 @keyframes typing {
-  to { width: 220px; }
+  to {
+    width: 220px;
+  }
 }
 
 @keyframes blink {
-  50% { border-color: transparent; }
+  50% {
+    border-color: transparent;
+  }
 }
 
 /* LINKS */
@@ -216,4 +224,37 @@ footer {
 
 ul {
   list-style-position: inside;
+}
+
+.scroll-indicator {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+
+  width: 50px;
+  height: 50px;
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  border-radius: 50%;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  color: white;
+  font-size: 28px;
+
+  animation: bounce 1.5s infinite;
+}
+
+@keyframes bounce {
+  0%,
+  100% {
+    transform: translateX(-50%) translateY(0);
+  }
+
+  50% {
+    transform: translateX(-50%) translateY(8px);
+  }
 }
